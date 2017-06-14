@@ -7,8 +7,7 @@
 	<!--CDN Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
-	
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Kaushan+Script|Montserrat:400,900" rel="stylesheet">
 	<!--CDN Font-Awesome-->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<!-- Linkear js Font Awesome -->
@@ -22,33 +21,40 @@
 	<section class="first-section">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse">
+						<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 					</button>
 				</div>
 				<!--esta es la barra de nav-->
-				<div class="navbar-collapse collapse">
+				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-left">
 						<li>Start Bootstrap</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">SERVICES</a></li>
-						<li><a href="#">PORTFOLIO</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">TEAM</a></li>
-						<li><a href="#">CONTACT</a></li>
-					</ul>
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li><a class="page-scroll" href="#services">Services</a>
+						</li>
+						<li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+						<li><a class="page-scroll" href="#about">About</a>
+						</li>
+						<li><a class="page-scroll" href="#team">Team</a>
+						</li>
+						<li><a class="page-scroll" href="#contact">Contact</a>
+						</li>
+					</ul>	
 				</div>
+				<!-- /.navbar-collapse -->
 			</div>
+			<!-- /.container-fluid -->
 		</nav>
+		<!-- HEADER -->
 		<div class="container" id="header">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-					<h3>Welcome To Our Studio</h3>	
+					<h3>Welcome To Our Studio!</h3>	
 					<h1>IT'S NICE TO MEET YOU</h1>
 					<a href="#" class="btn btn-primary">TELL ME MORE</a>
 				</div>
@@ -56,12 +62,12 @@
 		</div>
 	</section>
 	<!--SECTION 2 SERVICES-->
-	<section class= "second-section">
+	<section id="services" class= "second-section">
 		<div class= "container">
 			<div class= "row">
 				<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-					<h3 class= "svcs">SERVICES</h3>
-					<p class="Subtext">Lorem ipsum dolor sit amet consectetur.</p>
+					<h2 class="section-heading">SERVICES</h2>
+					<p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 				</div>
 			</div>
 		</div>
@@ -69,28 +75,49 @@
 			<div class= "row">
 				<div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
 					<!--cart-->
-					<i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
+					<i class="fa fa-shopping-cart fa-4x icon" aria-hidden="true"></i>
 					<h2 class="text-svcs">E-Commerce</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
 				</div>	 
 				<div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
 					<!--laptop-->
-					<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+					<i class="fa fa-laptop fa-4x icon" aria-hidden="true"></i>
 					<h2 class="text-svcs">Responsive Design</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
 				</div>		
 				<div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
 					<!--lock-->
-					<i class="fa fa-lock fa-3x" aria-hidden="true"></i>
-  					<h2 class="text-svcs">Web Security</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					<i class="fa fa-lock fa-4x icon" aria-hidden="true"></i>
+					<h2 class="text-svcs">Web Security</h2>
+					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Script de jQuery y Bootstrap -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-</html>
+
+	<!--SECTION 3 PORTFOLIO-->
+	<section id="portfolio" class="bg-light-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-4 col-xs-4 text-center">
+			<h2 class="section-heading">PORTFOLIO</h2>
+			<h3 class="subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+
+		</div>
+	</div>
+	</div>
+	</section>
+
+
+
+
+
+
+
+
+		<!-- Script de jQuery y Bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+	</html>

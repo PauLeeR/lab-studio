@@ -1,15 +1,26 @@
 /* colors
 amarillo: #f2c12e; 
 */
+body {
+	overflow-x: hidden;
+	/* font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
 
 /* Sección 1 NAVBAR */
-
 .first-section{
 	background-image: url(../img/header-bg.jpg);
 	position: static;
 	height: 125vh;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.navbar-inverse .navbar-nav{
+	padding-top: 10px;
+	padding-left: 80px;
+	padding-right: 50px;
+	background-attachment: scroll;
 }
 
 .navbar-inverse {
@@ -23,7 +34,7 @@ amarillo: #f2c12e;
 }
 
 .navbar-left{
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Kaushan Script', italic;
 	font-size: 28px;
 	color: #f2c12e;
 	font-weight: normal;
@@ -36,11 +47,18 @@ amarillo: #f2c12e;
 }
 
 #header h3{
-	font-family: 'Lato', cursive;
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
 }
 
 #header h1{
-	font-size: 50px;
+	font-size: 77px;
+	font-weight: bolder;
+}
+
+#header h3{
+	font-size: 40px;
+	font-weight: lighter;
 }
 
 .btn-primary{
@@ -52,13 +70,61 @@ amarillo: #f2c12e;
 	font-weight: bold;
 	width: 210px;
 	height: 60px;
+	margin-top: 20px;
 }
 
-
+/*section 2 services*/
 i {
 	color: #fff;
 	border-radius: 50%;
 	border: 1px solid #f2c12e;
-	background-color: #f2c12e;
+	background: #f2c12e;
 	padding: 20px;
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
 }
+
+.section-heading {
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 60px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.text-svcs{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 15px 0;
+	text-transform: none;
+}
+
+.second-section .text-muted{
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: #f2c12e;
+}
+
+.second-section p {
+	font-family: 'Droid Serif', serif;
+	letter-spacing: 0.5px;
+	text-align: justify-all;
+}
+
+#portfolio * {
+	z-index: 2;
+}
+
