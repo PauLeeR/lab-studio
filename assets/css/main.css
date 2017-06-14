@@ -1,0 +1,55 @@
+/* colors
+amarillo: #f2c12e; 
+*/
+
+/* Sección 1 NAVBAR */
+
+.first-section{
+	background-image: url(../img/header-bg.jpg);
+	position: static;
+	height: 125vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.navbar-inverse {
+	background: transparent;
+	border: none;
+}
+
+.navbar-default{
+	z-index: 1;
+	color:#FFF;
+}
+
+.navbar-left{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 28px;
+	color: #f2c12e;
+	font-weight: normal;
+	margin-top: 13px;
+}
+
+#header{
+	color: #fff;
+	padding-top: 100px;
+}
+
+#header h3{
+	font-family: 'Lato', cursive;
+}
+
+#header h1{
+	font-size: 50px;
+}
+
+.btn-primary{
+	padding: 18px;
+	font-size: 18px;
+	background-color: #f2c12e;
+	color: #fff;
+	border: none;
+	font-weight: bold;
+	width: 210px;
+	height: 60px;
+}
