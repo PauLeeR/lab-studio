@@ -53,3 +53,12 @@ amarillo: #f2c12e;
 	width: 210px;
 	height: 60px;
 }
+
+
+i {
+	color: #fff;
+	border-radius: 50%;
+	border: 1px solid #f2c12e;
+	background-color: #f2c12e;
+	padding: 20px;
+}
