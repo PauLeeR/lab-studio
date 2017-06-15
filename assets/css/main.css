@@ -16,19 +16,13 @@ body {
 	background-repeat: no-repeat;
 }
 
-.navbar-inverse .navbar-nav{
+.navbar-fixed-top{
 	padding-top: 10px;
 	padding-left: 80px;
 	padding-right: 50px;
 	background-attachment: scroll;
-}
-
-.navbar-inverse {
-	background: transparent;
 	border: none;
-}
-
-.navbar-default{
+	background: transparent;
 	z-index: 1;
 	color:#FFF;
 }
@@ -41,24 +35,52 @@ body {
 	margin-top: 13px;
 }
 
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #fed136;
+}
+.navbar-custom .nav li a {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	font-weight: lighter;
+}
+
+
+.navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus {
+  color: #fed136;
+  outline: none;
+}{
+	color: #f2c12e;
+}
+
 #header{
 	color: #fff;
 	padding-top: 100px;
 }
 
+#header .row{
+	padding-top: 120px;
+	padding-bottom: 50px;
+}
+
 #header h3{
 	font-family: 'Droid Serif', serif;
 	font-style: italic;
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 25px;
+	font-size: 40px;
+	font-weight: lighter;
 }
 
 #header h1{
-	font-size: 77px;
+	font-family: "Montserrat", sans-serif;
 	font-weight: bolder;
-}
-
-#header h3{
-	font-size: 40px;
-	font-weight: lighter;
+	font-size: 75px;
+	line-height: 75px;
+	margin-bottom: 50px;
 }
 
 .btn-primary{
@@ -108,23 +130,37 @@ i {
 	text-align: center;
 }
 
-.navbar-inverse .navbar-nav>li>a{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bolder;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover{
-	color: #f2c12e;
-}
-
 .second-section p {
 	font-family: 'Droid Serif', serif;
 	letter-spacing: 0.5px;
-	text-align: justify-all;
 }
 
+section h2.section-heading {
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+/*section 3 portfolio*/
 #portfolio * {
 	z-index: 2;
 }
 
+section 
+{
+	padding: 100px 0;
+}
+section h2.section-heading {
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.bg-light-gray {
+	background-color: #eeeeee;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.75;
+}
