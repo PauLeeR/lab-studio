@@ -17,6 +17,21 @@ body {
 	padding-bottom: 70px;
 }
 
+/* no me cambia el menú en responsive, se ve gigante y con un círculo detrás pq está tomando lo de los otros íconos amarillos redondos
+
+button.navbar-toggle{
+	color: red;
+	border-radius: 0%;
+	border: 1px solid #f2c12e;
+	background: #f2c12e;
+
+}*/
+
+.navbar-custom {
+  background-color: #222222;
+  border-color: transparent;
+}
+
 .navbar-fixed-top{
 	padding-top: 10px;
 	padding-left: 80px;
@@ -36,8 +51,17 @@ body {
 	margin-top: 13px;
 }
 
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
+.navbar-custom .navbar-toggle {
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+
+
+.navbar-custom .navbar-toggle:hover {
 	background-color: #fed136;
 }
 
@@ -52,6 +76,27 @@ body {
 .navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus {
 	color: #fed136;
 	outline: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+
+  .navbar-custom .navbar-left {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
 }
 
 #header{
@@ -95,7 +140,7 @@ body {
 }
 
 /*section 2 services*/
-i {
+.dos {
 	color: #fff;
 	border-radius: 50%;
 	border: 1px solid #f2c12e;
@@ -205,7 +250,7 @@ p {
 	content: "";
 	width: 2px;
 	background-color: #f1f1f1;
-	left: 572px;
+	left: 475px;
 	margin-left: -1.5px;
 }
 
@@ -241,7 +286,7 @@ p {
 	left: -14px;
 	right: auto;
 }
-.timeline > li .timeline-image {
+.yellow-img {
 	left: 0;
 	margin-left: 0;
 	width: 80px;
@@ -282,6 +327,7 @@ p {
 	margin-top: 0;
 	color: inherit;
 	font-weight: bolder;
+	text-transform: uppercase;
 }
 .timeline .timeline-heading h4.subheading {
 	text-transform: none;
@@ -362,6 +408,10 @@ p {
 }
 
 /* section Team */
+#team a {
+	text-decoration-line: none;
+}
+
 .team-member {
   text-align: center;
   margin-bottom: 50px;
@@ -385,11 +435,12 @@ ul.social-buttons {
   margin-bottom: 0;
 }
 
-ul.social-buttons li a {
+.icon {
   display: block;
   background-color: #222222;
   height: 40px;
   width: 40px;
+  padding: 0px;
   border-radius: 100%;
   font-size: 20px;
   line-height: 40px;
@@ -398,10 +449,10 @@ ul.social-buttons li a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  border-color: transparent;
+
 }
 
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
+.icon:hover {
   background-color: #fed136;
 }

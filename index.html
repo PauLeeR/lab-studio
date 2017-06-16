@@ -22,8 +22,8 @@
 		<!--esta es la barra de nav-->
 		<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 			<div class="container-fluid">
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 					</button>
 				</div>
@@ -43,6 +43,16 @@
 						<li><a class="page-scroll" href="#team">Team</a>
 						</li>
 						<li><a class="page-scroll" href="#contact">Contact</a>
+						</li>
+
+						<li class="dropdown">
+							<ul class="dropdown-menu"><span>MENU</span>
+								<li><a href="#services-iconos" class="no-amari">SERVICES</a></li>
+								<li><a href="#portfolio" class="no-amari">PORTFOLIO</a></li>
+								<li><a href="#about" class="no-amari">ABOUT</a></li>
+								<li><a href="#team">TEAM</a></li>
+								<li><a href="#contact" class="amari">CONTACT</a></li>
+							</ul>
 						</li>
 					</ul>	
 				</div>
@@ -75,19 +85,19 @@
 			<div class= "row">
 				<div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
 					<!--cart-->
-					<i class="fa fa-shopping-cart fa-4x icon" aria-hidden="true"></i>
+					<i class="fa fa-shopping-cart fa-4x dos" aria-hidden="true"></i>
 					<h2 class="text-svcs">E-Commerce</h2>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
 				</div>	 
 				<div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
 					<!--laptop-->
-					<i class="fa fa-laptop fa-4x icon" aria-hidden="true"></i>
+					<i class="fa fa-laptop fa-4x dos" aria-hidden="true"></i>
 					<h2 class="text-svcs">Responsive Design</h2>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
 				</div>		
 				<div class = "col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
 					<!--lock-->
-					<i class="fa fa-lock fa-4x icon" aria-hidden="true"></i>
+					<i class="fa fa-lock fa-4x dos" aria-hidden="true"></i>
 					<h2 class="text-svcs">Web Security</h2>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Minima maxima quam architecto quo inventore harum ex magni, dicta impedit.</p>
 				</div>
@@ -233,60 +243,60 @@
 						<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
 					</div>
 				</div>
-				 <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="assets/img/1 (1).jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="assets/img/2 (1).jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="assets/img/3 (1).jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="team-member">
+							<img src="assets/img/1 (1).jpg" class="img-responsive img-circle" alt="">
+							<h4>Kay Garland</h4>
+							<p class="text-muted">Lead Designer</p>
+							<ul class="list-inline social-buttons">
+								<li><a href="#"><i class="fa fa-twitter icon"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-facebook icon"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-linkedin icon"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="team-member">
+							<img src="assets/img/2 (1).jpg" class="img-responsive img-circle" alt="">
+							<h4>Larry Parker</h4>
+							<p class="text-muted">Lead Marketer</p>
+							<ul class="list-inline social-buttons">
+								<li><a href="#"><i class="fa fa-twitter icon"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-facebook icon"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-linkedin icon"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="team-member">
+							<img src="assets/img/3 (1).jpg" class="img-responsive img-circle" alt="">
+							<h4>Diana Pertersen</h4>
+							<p class="text-muted">Lead Developer</p>
+							<ul class="list-inline social-buttons">
+								<li><a href="#"><i class="fa fa-twitter icon"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-facebook icon"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-linkedin icon"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 		<!-- Script de jQuery y Bootstrap -->
